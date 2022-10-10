@@ -27,7 +27,7 @@ const home = () => {
 		<>
 			<CustomContainer>
 				<Grid templateColumns="repeat(2, 1fr)">
-					<Box w="130px" h="70px" pos="relative">
+					<Box w="130px" pos="relative">
 						<Image w="100%" src="/logo.png" alt="logo" />
 					</Box>
 					<Box
