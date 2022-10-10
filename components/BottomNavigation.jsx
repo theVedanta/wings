@@ -1,10 +1,26 @@
-import { Box, Grid, Link } from "@chakra-ui/react";
+import { Box, Button, Grid } from "@chakra-ui/react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { Home } from "react-feather";
 
 const BottomNavigationItem = ({ name, href }) => {
+	const router = useRouter();
+
 	return (
 		<>
-			<Box textAlign="center" p="20px 10px">
-				<Link to={href}>{name}</Link>
+			<Box textAlign="center" p="9px 0px">
+				<Button
+					borderRadius="50%"
+					width="45"
+					height="55"
+					variant="ghost"
+					backgroundColor={
+						router.pathname === href ? "primary.light" : "white"
+					}
+					color={router.pathname === href && "white"}
+				>
+					<Link href={href}>{name}</Link>
+				</Button>
 			</Box>
 		</>
 	);
@@ -24,10 +40,10 @@ const BottomNavigation = () => {
 				bg="white"
 				zIndex="1"
 			>
-				<BottomNavigationItem name="Home" href="/app/auth" />
-				<BottomNavigationItem name="Home" href="/app/auth" />
-				<BottomNavigationItem name="Home" href="/app/auth" />
-				<BottomNavigationItem name="Home" href="/app/auth" />
+				<BottomNavigationItem name={<Home />} href="/app/home" />
+				<BottomNavigationItem name={<Home />} href="/app/auth" />
+				<BottomNavigationItem name={<Home />} href="/app/auth" />
+				<BottomNavigationItem name={<Home />} href="/app/auth" />
 			</Grid>
 		</>
 	);

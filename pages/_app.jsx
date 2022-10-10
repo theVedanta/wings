@@ -3,12 +3,25 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import Loader from "@/components/Loader";
 import { useEffect, useState } from "react";
+import "@fontsource/poppins";
+import "@fontsource/raleway";
 
 const theme = extendTheme({
 	fonts: {
 		body: "system-ui, sans-serif",
 		heading: "Georgia, serif",
 		mono: "Menlo, monospace",
+	},
+	colors: {
+		primary: {
+			dark: "#3860E4",
+			mid: "#3876e4",
+			light: "#347af6",
+		},
+	},
+	fonts: {
+		poppins: `"Poppins", sans-serif;`,
+		raleway: `"Raleway", sans-serif;`,
 	},
 });
 
