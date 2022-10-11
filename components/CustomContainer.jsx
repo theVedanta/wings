@@ -6,7 +6,7 @@ const CustomContainer = ({ children }) => {
 	return (
 		<>
 			<Box pos="relative" h="100vh" overflow="hidden">
-				<Box h="95vh" pb="2.5rem" overflow="auto">
+				<Box h="100%" pb="4rem" overflow="auto">
 					{children}
 				</Box>
 				<BottomNavigation />

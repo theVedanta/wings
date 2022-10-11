@@ -1,9 +1,10 @@
 import { Box, Button, Grid } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Home } from "react-feather";
+import { CreditCard, Home, ShoppingBag, User } from "react-feather";
+import { IoTicketOutline } from "react-icons/io5";
 
-const BottomNavigationItem = ({ name, href }) => {
+const BottomNavigationItem = ({ icon, href }) => {
 	const router = useRouter();
 
 	return (
@@ -19,7 +20,7 @@ const BottomNavigationItem = ({ name, href }) => {
 					}
 					color={router.pathname === href && "white"}
 				>
-					<Link href={href}>{name}</Link>
+					<Link href={href}>{icon}</Link>
 				</Button>
 			</Box>
 		</>
@@ -30,7 +31,7 @@ const BottomNavigation = () => {
 	return (
 		<>
 			<Grid
-				templateColumns="repeat(4, 1fr)"
+				templateColumns="repeat(5, 1fr)"
 				w="100%"
 				pos="absolute"
 				bottom="0"
@@ -40,10 +41,23 @@ const BottomNavigation = () => {
 				bg="white"
 				zIndex="1"
 			>
-				<BottomNavigationItem name={<Home />} href="/app/home" />
-				<BottomNavigationItem name={<Home />} href="/app/auth" />
-				<BottomNavigationItem name={<Home />} href="/app/auth" />
-				<BottomNavigationItem name={<Home />} href="/app/auth" />
+				<BottomNavigationItem
+					icon={<IoTicketOutline size="25px" />}
+					href="/app/flights/my-flights"
+				/>
+				<BottomNavigationItem
+					icon={<CreditCard size="23px" />}
+					href="/app/credit"
+				/>
+				<BottomNavigationItem icon={<Home size="23px" />} href="/app" />
+				<BottomNavigationItem
+					icon={<ShoppingBag size="23px" />}
+					href="/app/auth"
+				/>
+				<BottomNavigationItem
+					icon={<User size="23px" />}
+					href="/app/auth"
+				/>
 			</Grid>
 		</>
 	);
