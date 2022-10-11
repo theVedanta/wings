@@ -18,6 +18,8 @@ const theme = extendTheme({
 			mid: "#3876e4",
 			light: "#347af6",
 		},
+		danger: "#f44336",
+		success: "#52d957",
 	},
 	fonts: {
 		poppins: `"Poppins", sans-serif;`,
