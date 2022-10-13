@@ -36,11 +36,13 @@ const home = () => {
 						justifyContent="flex-end"
 						pr="20px"
 					>
-						<Avatar
-							name="Dan Abrahmov"
-							mt={5}
-							src="https://bit.ly/dan-abramov"
-						/>
+						<Link href="/app/profile" passHref>
+							<Avatar
+								name="Dan Abrahmov"
+								mt={5}
+								src="https://bit.ly/dan-abramov"
+							/>
+						</Link>
 					</Box>
 				</Grid>
 

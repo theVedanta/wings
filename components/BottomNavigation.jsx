@@ -52,11 +52,11 @@ const BottomNavigation = () => {
 				<BottomNavigationItem icon={<Home size="23px" />} href="/app" />
 				<BottomNavigationItem
 					icon={<ShoppingBag size="23px" />}
-					href="/app/auth"
+					href="/app/shop"
 				/>
 				<BottomNavigationItem
 					icon={<User size="23px" />}
-					href="/app/auth"
+					href="/app/profile"
 				/>
 			</Grid>
 		</>
