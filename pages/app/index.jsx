@@ -135,6 +135,78 @@ const home = () => {
 							<TicketItem />
 						</Box>
 					</TabPanel>
+					<TabPanel padding="1.5rem 10px" pb="0">
+						<HomeInputBox
+							label="From (Location)"
+							value={location}
+							setValue={setLocation}
+						/>
+
+						<Grid
+							templateColumns="repeat(2,1fr)"
+							marginTop="8px"
+							gridGap="8px"
+						>
+							<HomeInputBox
+								label="Departure"
+								value={departure}
+								setValue={setDeparture}
+							/>
+
+							<HomeInputBox
+								label="Passengers"
+								value={passengers}
+								setValue={setPassengers}
+							/>
+							<HomeInputBox
+								label="Class"
+								isSelectInput={true}
+								selectInputData={ClassData}
+							/>
+						</Grid>
+						<Button
+							fontFamily="poppins"
+							bg="primary.light"
+							color="white"
+							fontWeight="500"
+							width="100%"
+							margin="12px 0"
+							padding="16px 0"
+							height="auto"
+							borderRadius="15px"
+						>
+							Search Flights
+						</Button>
+
+						<Box>
+							<Box
+								display="flex"
+								justifyContent="space-between"
+								margin="15px 0"
+							>
+								<Text
+									fontSize="18px"
+									fontWeight="500"
+									fontFamily="poppins"
+								>
+									Upcoming Flights
+								</Text>
+								<Link href="/app/flights" passHref>
+									<Text
+										size="sm"
+										fontFamily="poppins"
+										color="primary.light"
+									>
+										See all
+									</Text>
+								</Link>
+							</Box>
+							<TicketItem />
+							<TicketItem />
+							<TicketItem />
+							<TicketItem />
+						</Box>
+					</TabPanel>
 				</CustomTabs>
 			</CustomContainer>
 		</>

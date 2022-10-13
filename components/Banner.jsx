@@ -51,7 +51,7 @@ const Banner = () => {
 						You'll find the instructors who care, a first-class
 						experience, and an exclusive community
 					</Text>
-					<Link href="/app/auth">
+					<Link href="/app">
 						<Button
 							fontFamily="poppins"
 							fontWeight="500"

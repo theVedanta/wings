@@ -25,46 +25,6 @@ const Cart = () => {
 							price="$25.00"
 							image="/product1.webp"
 						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
-						<CartItem
-							name="Subway Sandwich"
-							price="$25.00"
-							image="/product1.webp"
-						/>
 					</Box>
 				</Box>
 				<Box
