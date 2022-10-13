@@ -32,6 +32,8 @@ const ProductItemCard = ({ image, name, price, setShowCartBtn }) => {
 					fontFamily="poppins"
 					fontSize="14px"
 					borderRadius="10px"
+					padding="12px"
+					height="auto"
 					onClick={() => {
 						window.localStorage.setItem("hasCartItem", true);
 						setShowCartBtn && setShowCartBtn(true);
