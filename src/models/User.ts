@@ -9,10 +9,10 @@ interface UserInterface {
 }
 
 const userSchema = new Schema<UserInterface>({
-    name: { type: String, required: true },
-    email: { type: String, required: true },
-    authToken: { type: String, required: true },
-    credits: { type: Number, required: true },
+    name: { type: String },
+    email: { type: String },
+    authToken: { type: String },
+    credits: { type: Number },
 });
 
 const User = model<UserInterface>("user", userSchema);
